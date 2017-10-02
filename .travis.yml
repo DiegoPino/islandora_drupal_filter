@@ -11,13 +11,16 @@ addons:
 jdk:
   - openjdk6
   - openjdk7
-  - oraclejdk7
   - oraclejdk8
+  - oraclejdk9
 env:
   - FEDORA_VERSION=3.6.2
   - FEDORA_VERSION=3.7.0
   - FEDORA_VERSION=3.7.1
   - FEDORA_VERSION=3.8.1
+matrix:
+  allow_failures:
+    - oraclejdk9
 install:
   - echo "Downloading Maven 3.0";
   - wget https://archive.apache.org/dist/maven/binaries/apache-maven-3.0-bin.zip || travis_terminate 1
