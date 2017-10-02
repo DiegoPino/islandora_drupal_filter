@@ -1,5 +1,6 @@
 dist: trusty
-sudo: required
+#Docker container based
+sudo: false
 language: java
 cache:
   directories:
