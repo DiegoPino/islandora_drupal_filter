@@ -20,7 +20,7 @@ env:
   - FEDORA_VERSION=3.8.1
 matrix:
   allow_failures:
-    - oraclejdk9
+    - jdk: oraclejdk9
 install:
   - echo "Downloading Maven 3.0";
   - wget https://archive.apache.org/dist/maven/binaries/apache-maven-3.0-bin.zip || travis_terminate 1
