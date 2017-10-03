@@ -24,7 +24,7 @@ matrix:
            packages:
              - openjdk-6-jdk
        install:
-         - sh $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
+         - source $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
      - jdk: openjdk6
        env: FEDORA_VERSION="3.7.0"
        addons:
@@ -32,7 +32,7 @@ matrix:
            packages:
              - openjdk-6-jdk
        install:
-        - sh $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
+        - source $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
      - jdk: openjdk6
        env: FEDORA_VERSION="3.7.1"
        addons:
@@ -40,7 +40,7 @@ matrix:
            packages:
              - openjdk-6-jdk
        install:
-        - sh $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
+        - source $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
      - jdk: openjdk6
        env: FEDORA_VERSION="3.8.1"
        addons:
@@ -48,7 +48,7 @@ matrix:
            packages:
              - openjdk-6-jdk
        install:
-       - sh $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
+       - source $TRAVIS_BUILD_DIR/tests/scripts/mavenforopenjdk6.sh
   allow_failures:
     - jdk: oraclejdk9
 
